@@ -3,7 +3,7 @@
 -- Memu 960x600 120dpi
 -- http://ankulua.boards.net/thread/167/brave-exvius-ffbeauto-farming-explorations
 
-ver = "ffbeAuto v0.51"
+ver = "ffbeAuto v0.52"
 
 Settings:setCompareDimension(true, 600)
 Settings:setScriptDimension(true, 600)
@@ -437,7 +437,7 @@ function fFarm(location)
 	else
 		for i=0,60 do
 			if(i%5==0) then connectionCheck() end
-			if(i%10==0) then gameOver(); break end
+			if(i%10==0) then gameOver() end
 			if(existsClick(autobtn,1) and debug_mode) then runlog("autobtn") end
 			if(exists(results_big)) then break end
 		end
